@@ -1,0 +1,455 @@
+/* footer */
+.footermegaparent {
+  background-color: #061e43;
+}
+.footerparent1 {
+  padding-top: 15vh;
+  margin-left: 3%;
+  padding-bottom: 7%;
+}
+
+.footerimages1 {
+  height: 70px;
+}
+.footerimages2 {
+  height: 90px;
+}
+.footerimages3 {
+  height: 90px;
+}
+.footerimages4 {
+  height: 90px;
+}
+
+.contactIconsFooter i {
+  color: white;
+}
+.contactIconsFooter i:hover {
+  color: rgb(202, 202, 202);
+}
+
+.footerheading {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 6%;
+}
+.footera {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.footera:hover {
+  color: #05419c;
+}
+
+.footerbottomcontent {
+  margin-top: 2%;
+  padding-bottom: 1%;
+}
+
+.footera1 {
+  text-decoration: none;
+  color: white;
+}
+.footerparalast {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8798b3;
+}
+
+.parent2footcon {
+  margin-left: -30%;
+}
+.footercontactus {
+  text-decoration: none;
+}
+.footercontactus:hover {
+  background-color: #3e67a4;
+  padding: 10px 10px;
+}
+
+.contentfoot {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+.parent2footcon p {
+  margin: 0;
+  padding: 0;
+}
+.cardlistdown {
+  background-color: transparent;
+  border: none;
+}
+
+.contentfooter {
+  color: white;
+}
+.contentFootHeading {
+  color: white;
+  font-weight: 600;
+}
+
+/* section 5 */
+#section5 {
+  margin-top: 10%;
+}
+.aparentsec5Box {
+  width: 100%;
+}
+
+.icinsec5 {
+  font-size: 30px;
+  color: #0056b3;
+}
+.sec5h4new {
+  color: #082a5e;
+  font-size: 23px;
+  font-weight: 800;
+}
+.title-line1 {
+  color: #082a5e;
+  font-size: 40px;
+}
+.title-line2 {
+  color: #0056b3;
+  font-size: 41px;
+}
+.parentsec5icondad {
+  margin: 3% 5%;
+}
+
+/* section 6 */
+#section6 {
+  margin: 8% 10%;
+}
+
+.instSubsec5 {
+  margin: 3% 0;
+  padding: 0;
+  font-weight: 570;
+  color: #5a7093;
+}
+
+.insNameSec5 {
+  margin: 0;
+  padding: 0;
+  color: #082a5e;
+  font-size: 26px;
+  font-weight: 600;
+}
+.circlrsec6par {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 100%;
+}
+
+.shareCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2ceff;
+  height: 40px;
+  width: 40px;
+  border-radius: 60%;
+}
+
+.shareCircle i {
+  color: #082a5e;
+}
+
+/* section 7 */
+/* make sizing predictable */
+* {
+  box-sizing: border-box;
+}
+
+/* outer wrapper */
+#section7 {
+  margin: 8% 10%;
+  
+}
+
+
+.section7parent {
+  width: 100%;
+  min-height: 40vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #9116a1;
+  border-radius: 10px;
+  position: relative;
+  /* padding: 2rem; */
+  overflow: hidden; /* NEW */
+}
+
+
+.sec7Parent2 {
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+
+.sec7Parent2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* padding: 1rem; */
+}
+
+/* text */
+.sec7h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+}
+.sec7paragraph {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.section7parent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image1Section7 {
+  position: absolute;
+  bottom: -80%; 
+  right: -15%; 
+  height: 150px; 
+  width: auto;
+}
+.img2Section7 {
+  position: absolute;
+  top: -12%; 
+  left: 8%; 
+  height: 25% !important; 
+  width: auto !important; 
+}
+
+/* footer */
+.footermegaparent {
+  background-color: #061e43; /* removes extra bottom space */
+}
+.footerparent1 {
+  padding-top: 15vh;
+  margin-left: 3%;
+  padding-bottom: 7%;
+}
+
+.footerimages1 {
+  height: 70px;
+}
+.footerimages2 {
+  height: 90px;
+}
+.footerimages3 {
+  height: 90px;
+}
+.footerimages4 {
+  height: 50px;
+}
+
+.contactIconsFooter i {
+  color: white;
+}
+.contactIconsFooter i:hover {
+  color: rgb(202, 202, 202);
+}
+
+.footerheading {
+  color: white;
+  font-weight: 800;
+  margin-bottom: 6%;
+}
+.footera {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.footera:hover {
+  color: #05419c;
+}
+
+.footerbottomcontent {
+  margin-top: 2%;
+  padding-bottom: 1%;
+}
+
+.footera1 {
+  text-decoration: none;
+  color: white;
+}
+.footerparalast {
+  font-size: 15px;
+  font-weight: 600;
+  color: #8798b3;
+}
+
+.parentfooterContactUs {
+  margin-bottom: 20px;
+}
+#section2bottom {
+  margin-left: 10%;
+}
+.link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.scroll {
+  height: 5px;
+  width: 0;
+  border-radius: 4px;
+  background-color: #05419c;
+  transition: width 0.3s ease;
+}
+
+.link-wrapper:hover .scroll {
+  width: 15px;
+}
+
+.footera1 {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #b2bdcd;
+  transition: color 0.3s;
+  font-size: 17px;
+}
+
+.link-wrapper:hover .footera1 {
+  color: #ffffff;
+}
+
+
+.whatsappicons {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  animation: float 2s infinite ease-in-out; 
+}
+
+.whatsappimg {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.arrowicons {
+  width: 50px;
+  height: 50px;
+  background-color: #053885;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 99;
+}
+
+
+
+/* contact fixed icon */
+.ContactFixedicon {
+  width: 150px;
+  height: 50px;
+  background-color: #139909;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+
+  position: fixed;
+  bottom: 70px;
+  right: 70px;
+  z-index: 99;
+  text-decoration: none;
+
+  opacity: 0;
+  transform: scale(0);
+
+  
+  animation: pulseAppear 11s ease-in-out infinite; 
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contactfixetext {
+  color: white;
+  font-size: larger;
+  font-weight: 700;
+}
+
+
+@keyframes pulseAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(0.85);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <!-- cdn of font icon -->
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- cdn of font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+ <style>
+    .logo{
+        max-width:280px;
+    }
+    .btn{
+        background-color: #5D2E8C;
+        filter: brightness(1.5);
+    }
+    .fow{
+        font-weight:500;
+        color: #000080;
+    }
+    .bfs{
+        font-size: 16px;
+    }
+    .custom-size1 {
+    font-size: 1rem;        /* Increase font size */
+    padding: 0.8rem 0.7rem;     /* Adjust padding to make the button larger */
+    min-width: 150px;         /* Optional: Set a minimum width */
+  }
+  .custom-size2 {
+    font-size: 1rem;        /* Increase font size */
+    padding: 0.8rem 1.7rem;     /* Adjust padding to make the button larger */
+    min-width: 150px;         /* Optional: Set a minimum width */
+  }
+  .whole1{
+    position: relative;
+    z-index: 3;
+  }
+  .shape{
+    position: absolute;
+    max-width: 44px;
+    right: 320px;
+    top: -23px;
+  }
+  .shape1{
+    position: absolute;
+    max-width: 58px;
+    left: -17%;
+    bottom: 81%;
+  }
+  .title{
+    background-color:"black";
+  }
+  .bigtitle{
+    font-size: 58px;
+  }
+  body{
+    background-color: #f5f8fc;
+  }
+  .whole2{
+    position: relative;
+    z-index: 2;
+  }
+  .shape2{
+    position: absolute;
+    max-width: 65px;
+    top: 21%;
+    left: 21%;
+  }
+  .shape3{
+    position: absolute;
+    max-width: 87px;
+    left: -87px;
+    bottom: 33%;
+  }
+  .shape4{
+    position: absolute;
+    max-width: 52px;
+    right: -37px;
+    top: 27%;
+  }
+  .count{
+    color: #000080;
+  }
+  .file{
+    position: relative;
+  }
+  .file1{
+    position: absolute;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px 20px;
+    text-align: center;
+    left: 40px;
+    top: 50%;
+  }
+  .file2{
+    position: absolute;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px 20px;
+    text-align: center;
+    left: 511px;
+    top: 63%;
+  }
+.logo-img {
+  width: 180px;   /* fixed width */
+  height: 80px;   /* fixed height */
+  object-fit: contain;
+}
+
+    .text-purple{
+        color: purple;
+    }
+    .back-purple{
+        background-color: rgb(124, 53, 124);
+    }
+    .back-purplerec{
+        background-color: rgb(160, 43, 160);
+    }
+    .text-darkblue{
+        color: rgb(43, 43, 100);
+    }
+    .text-yellow{
+        color: rgb(229, 175, 75);
+    }
+    .shine-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.hi{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.shine-img {
+  width: 100%;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.shine-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+  animation: shine-slide 2s infinite;
+}
+
+@keyframes shine-slide {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+.back-bluenew{
+    background-color: blue;
+}
+.icon{
+    font-size: 70px;
+}
+.list-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+    margin: 29px 60px 0 0;
+}
+.icon{
+    width: 80px;
+    gap: 30px;
+    color: #5D2E8C;   
+    /* 80 30 */
+}
+.ins-image {
+    text-align: center;
+    position: relative;
+    margin: 0 0 20px;
+    z-index: 1;
+}
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+ </style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+  <a class="navbar-brand" href="#"><img class="logo" src="https://d3eqn3hw2x95rk.cloudfront.net/logo/logo_wide_2.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse ps-5" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ps-2">
+      <li class="nav-item active pe-2">
+        <a class="nav-link fow"  href="#"><span style="color: rgb(167, 14, 167);">Home</span></a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">Courses</a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">Placements</a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">Blog</a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">About Us</a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">Contact</a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">Hire From Us</a>
+      </li>
+      <li class="nav-item pe-2">
+        <a class="nav-link fow" href="#">More</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0 ps-5">
+      <div class="ps-5 d-flex" style="gap: 1rem;">
+      <button type="button" class="btn btn-primary btn-lg bfs custom-size1">ENQUIRE NOW</button>
+      <button type="button" class="btn btn-secondary btn-lg bfs custom-size2">BOOK A CALLBACK</button>
+      </div>
+    </form>
+  </div>
+    </nav>
+
+ <section class="ms-5 mt-5 section-bg " style="background-image: url(/assets/banner_bg.webp);background-size: cover;"> <!--mt-5-->
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6 mt-5">  <!-- -->
+            <div class="whole1 mt-5"> <!-- -->
+                <img alt="Decorative shape element for background design" class="shape1 aos-init aos-animate decorative-shape " data-aos="fade-down-right" data-aos-delay="1200" src="/assets/bshape_01.png">
+                <img alt="Secondary decorative shape design" class="shape" src="/assets/bshape_02.png">
+                <span class="title f-w-bold mt-3" style="color: #9b3abb;">🏆 Leaders in Education Since 6 Years</span>
+                <h1 class="bigtitle mt-3 fw-bold" style=" color: #000080;">Kerala's <span style="color: #9b3abb;">No.1 <br></span> Software Training <br>  Institute</h1>
+                <p class="mt-3">Best software training institute in Kochi, Trivandrum & Calicut.<br>Job-ready tech skills for your career As the best software training <br> institute in Kochi, we're committed to your career success through <br> industry-relevant curriculum and hands-on training.</p>
+                <div class="twobwrap mt-4 d-flex gap-4 align-center">
+                    <div class="fisrtb">
+                        <a href="https://www.luminartechnolab.com/courses"><button type="button" class="btn btn-secondary btn-lg bfs custom-size2">EXPLORE COURSES <i><i class="fa-solid fa-arrow-right"></i></i></button></a>
+                    </div>
+                    <div class="phone  d-flex g-5 align-center">
+                    <img style="width: 40px;height: 35px;" src="./assets/call.png" alt="">
+                    <div class="secondwriting">
+                        <span>Have any questions?</span>
+                        <h5 class="fw-bold" style=" color: #000080;">80&nbsp;86&nbsp;65&nbsp;16&nbsp;51</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="whole2">
+                <img style="max-width: 100%;padding-top: 10rem;" src="/assets/banner_img.png" alt="">
+                <img alt="Decorative shape element for background design" class="shape2 aos-init aos-animate" data-aos="fade-down-right" data-aos-delay="1200" src="/assets/bshape_03.png">
+                <img alt="Secondary shape element for background design" class="shape3 aos-init aos-animate" data-aos="fade-right" data-aos-delay="1200" src="/assets/bshape_05.png">
+                <img alt="Another shape element for background design" class="shape4 aos-init aos-animate" data-aos="fade-down-left" data-aos-delay="1200" src="/assets/bshape_04.png">
+                <div clss="twofiles">
+                    <div class="file1">
+                        <div class="icon"><i class="fa-solid fa-graduation-cap fs-4 rounded-circle bg-success d-flex align-items-center justify-content-center ms-3" style="color: #ffffff;width:50px; height:50px;"></i></div>
+                        <div class="info">
+                           <span>Placements</span>
+                           <h4 class="count fw-bold">8000+</h4>
+                        </div>
+                    </div>
+                    <div class="file2">
+                        <div class="icon"><i class="fa-solid fa-microchip fs-4 rounded-circle d-flex align-items-center justify-content-center ms-3" style="color: #ffffff;background-color: #9b3abb;width:50px; height:50px;"></i></div>
+                        <div class="info">
+                           <span>Total Technologies</span>
+                           <h4 class="count fw-bold">30+</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="mt-5 p-5">
+<div class="slider bg-white py-5">
+<div class="container">
+<div id="logoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-inner text-center">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center gap-4">
+        <img src="./assets/images_2.png" class="logo-img" alt="Logo1">
+        <img src="./assets/download_2.png" class="logo-img" alt="Logo2">
+        <img src="./assets/download_3.png" class="logo-img" alt="Logo3">
+        <img src="./assets/download_4.png" class="logo-img" alt="Logo4">
+        <img src="./assets/download_5.png" class="logo-img" alt="Logo5">
+        <img src="./assets/download_6.png" class="logo-img" alt="Logo6">
+      </div>
+    </div>
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center gap-4">
+        <img src="./assets/download_7.png" class="logo-img" alt="Logo7">
+        <img src="./assets/images_2.png" class="logo-img" alt="Logo8">
+        <img src="./assets/download_2.png" class="logo-img" alt="Logo9">
+        <img src="./assets/download_3.png" class="logo-img" alt="Logo10">
+        <img src="./assets/download_4.png" class="logo-img" alt="Logo11">
+        <img src="./assets/download_5.png" class="logo-img" alt="Logo12">
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="mt-5">
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+        <div>
+            <h2 class="mt-3">Our <span class="text-purple">Featured</span> Courses</h2>
+        </div>
+        <div class="d-flex mt-4">
+            <h5 class="me-4"> <span class="text-purple">All Courses</span><span class="badge text-white back-purple">New</span></h5>
+            <h5 class="me-4">New One</h5>
+            <h5 class="me-4">Recommended</h5>
+            <h5 class="me-4">Most Placed</h5>
+        </div>
+    </div>
+    <div class="row mt-5 ">
+        <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 24rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/1704974672404.jpeg" alt="Card image cap">
+            <span class="hi badge text-white fw-light fs-7  back-purplerec p-2">Recommended</span>
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+        <!-- next -->
+         <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 24rem;height: 32rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/mearn.jpg" alt="Card image cap">
+            <span class="hi badge text-white fw-light fs-7  back-purplerec p-2">Recommended</span>
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>6 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>6 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">MEA(R)N Stack Web Development Expert</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.98)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+ <div class="col-lg-4 col-md-6">
+            <div class="card" style="width: 24rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/robotic.jpeg" alt="Card image cap">
+            <span class="hi badge text-white fw-light fs-7  back-bluenew p-2">New One</span>
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>9 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Robotics with AI & IOT Training (new edition)</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+<div class="col-lg-4 col-md-6 mt-4">
+            <div class="card" style="width: 24rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/django-course-thumbnail.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+<div class="col-lg-4 col-md-6 mt-4">
+            <div class="card" style="width: 24rem;height: 31rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/ds_cjuFo7i.jpeg" alt="Card image cap">
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+<div class="col-lg-4 col-md-6 mt-4">
+            <div class="card" style="width: 24rem;height: 31rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/spring_M2WFgIG.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+<div class="col-lg-4 col-md-6 mt-4">
+            <div class="card" style="width: 24rem;height: 31rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/asp.net.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+<div class="col-lg-4 col-md-6 mt-4">
+            <div class="card" style="width: 24rem;height: 31rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/data_analysis_Khz1Nw4.jpg" alt="Card image cap">
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+<!-- next -->
+<div class="col-lg-4 col-md-6 mt-4">
+            <div class="card" style="width: 24rem;">
+            <div class="shine-wrapper">
+            <img class="card-img-top shine-img" src="https://d3eqn3hw2x95rk.cloudfront.net/course_image/flutter.webp" alt="Card image cap">
+            </div>
+            <div class="card-body mt-3">
+                <div class="d-flex">
+                    <div class="d-flex">
+                    <i class="fa-regular fa-file"></i>
+                    <h6>11 Modules</h6>
+                    </div>
+                    <div class="d-flex ms-4">
+                    <i class="fa-regular fa-clock"></i>
+                    <h6>5 Months</h6>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h5 class="text-darkblue">Software Testing Training-Manual & Automation</h5>
+                </div>
+                <div class="d-flex">
+                    <div class="mt-1">
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                        <i class="fa-solid fa-star text-yellow"></i>
+                    </div>
+                    <div><h6 class="ms-2 mt-2">(4.88)</h6></div>
+                </div>
+                <h6 class="mt-2">🏆 100% Placement assistance 🏆</h6>
+                <h6 class="text-center mt-5">See More..</h6>
+        </div>
+    </div>
+        </div>
+
+
+    </div>
+    </div>
+</section>
+
+
+<section class="mt-5 bg-white p-5">
+    <div class="container mt-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6">
+                    <img style="width: 700px;height: 550px;" src="./assets/image.png" alt="">
+            </div>
+            <div class="col-lg-6 ">
+                <div class="content">
+                    <div class="title ms-5">
+                        <span class="sub-title" style="color: #9b3abb;">Who We Are</span>
+                        <h1 class="fw-bold">Learn From <span style="color: #993fb7;">Industry Experts</span> Across the Globe</h2>
+                        <p class="text-muted">We are a Best software training institute in kochi, empowering <br> individuals with skills and knowledge to excel in the tech industry. Our <br> expert instructors, comprehensive lessons, and global reach make us the <br> ideal choice for professional growth. As the best software training <br> institute in Kochi, we pride ourselves on our industry collaborations and <br> exceptional placement record.</p>
+                        
+                        <div class="row">
+                            <!-- First -->
+                       <div class="col-6">
+                        <div class="d-flex justify-content">
+                        <i class="fa-solid fa-user-shield icon"></i>
+                        <p class="content fw-bold" style="color:#000080">50+ <br> Expert <br> Trainers</p>
+                        </div>
+                        </div>   <!-- Takes 6 columns (half row) -->
+
+                        <!-- Second -->
+                        <div class="col-6">
+                        <div class="d-flex justify-content">
+                        <i class="fa-regular fa-file-lines icon text-success"></i>
+                        <p class="content fw-bold" style="color:#000080">100+ <br>Specialized <br> Modules</p>
+                        </div>
+                        </div>  <!-- Takes remaining 6 columns (half row) -->
+
+                        <!-- Third (below First) -->
+                        <div class="col-6 mt-5">
+                        <div class="d-flex justify-content">
+                        <i class="fa-solid fa-graduation-cap icon"></i>
+                        <p class="content fw-bold" style="color:#000080">8000+ <br> Successfull <br> Graduates</p>
+                        </div>
+                        </div>   <!-- Takes 6 columns, but row already full so it drops to next line -->
+                        </div>
+                        <div class="fisrtb mt-3">
+                        <a href="https://www.luminartechnolab.com/courses"><button type="button" class="btn btn-secondary btn-lg bfs custom-size2">LEARN MORE<i><i class="fa-solid fa-arrow-right"></i></i></button></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="instagram-feed-section p-5">
+    <div class="container">
+        <div class="instagram-feed-title">
+            <h2 class="text-center fw-bold">Our Instagram <span class="ctf"><a href="https://www.instagram.com/luminartechnolab/" style="text-decoration: underline;color: #8a2fa8;">Feed <i aria-hidden="true" class="fa-brands fa-instagram" style="color: inherit;"></i></a></span></h2>
+            <p class="text-center text-muted">Follow us on <a aria-label="Visit our Instagram page for latest updates" href="https://www.instagram.com/luminartechnolab/" rel="noopener noreferrer" style="text-decoration: underline;color: #8a2fa8;" target="_blank">Instagram</a> for the latest updates and behind-the-scenes content. Stay connected with us and explore our latest posts.</p>
+        </div>
+        <div class="instagram-feed-wrapper"><div class="instagram-feed-track" style="cursor: grab; transform: none;"></div></div>
+    </div>
+    <p class="text-center text-muted" id="instagram-feed-loading">Failed to load Instagram feeds. Please try again.</p>
+</section>
+
+
+<section class="bg-white p-5">
+    <h6 style="color: #5D2E8C;text-align: center;">Excellence in Education</h6>
+    <h1 class="fw-bold text-center">Why Luminar Technolab Is The <br> <span style="color: #5D2E8C;"> Best Software Training </span> Institute in Kochi</h1>
+    <div class="row justify-content mt-5  ">
+        <div class="col-lg-3">
+            <div class="feature text-center">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-handshake-angle fa-2x mb-2" style="color: #0056b3;"></i>
+                </div>
+                <div class="feature-content">
+                    <h4 style="font-size: 22px;">100% Placement Assistance</h4>
+                    <p>Dedicated placement cell with strong <br> industry connections to help you <br> secure your dream job.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature text-center">
+                <div class="feature-icon">
+                   <i class="fa-solid fa-user-tie fa-2x mb-2" style="color: #0056b3;"></i>
+                </div>
+                <div class="feature-content">
+                    <h4 style="font-size: 22px;">Industry-Expert Trainers</h4>
+                    <p>Learn from certified professionals with <br> extensive real-world industry <br> experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature text-center">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-laptop-code fa-2x mb-2" style="color: #0056b3;"></i>
+                </div>
+                <div class="feature-content">
+                    <h4 style="font-size: 22px;">Real-World Projects</h4>
+                    <p>Hands-on experience with industry- <br> relevant projects to build a <br> professional portfolio.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="feature text-center">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-certificate fa-2x mb-2" style="color: #0056b3;"></i>
+                </div>
+                <div class="feature-content">
+                    <h4 style="font-size: 22px;">ISO-Certified Institute</h4>
+                    <p>Quality education guaranteed through <br> ISO certification and standardized <br> training methods.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fisrtb mt-5 text-center"><a href="https://www.luminartechnolab.com/courses"><button type="button" class="btn btn-secondary btn-lg bfs custom-size2">EXPLORE OUR COURSES<i><i class="fa-solid fa-arrow-right"></i></i></button></a></div>
+    </div>
+</section>
+
+<section class="p-5 bg-white">
+  <div class="container">
+    <h6>Our Qualified People Matter</h6>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1>Top <span style="color: #8a2fa8;">Class</span> Instructors</h1>
+      <div class="fisrtb text-center">
+        <a href="https://www.luminartechnolab.com/courses">
+          <button type="button" class="btn btn-secondary btn-lg bfs custom-size2">
+            ALL INSTRUCTORS
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Instructor Card -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="ins-image">
+          <img src="./assets/trainers_-_18-min.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="content d-flex justify-content-between align-items-center mt-2">
+          <div class="left text-start">
+            <span class="designation d-block">Python Django</span>
+            <h4 class="name mb-0">SAJAY N J</h3>
+          </div>
+          <div class="right">
+            <span class="share"><i class="fa-solid fa-share-nodes"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat for other instructors -->
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="ins-image">
+          <img src="./assets/trainers_-_21-min.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="content d-flex justify-content-between align-items-center mt-2">
+          <div class="left text-start">
+            <span class="designation d-block">Data Science</span>
+            <h4 class="name mb-0">Sabir K</h3>
+          </div>
+          <div class="right">
+            <span class="share"><i class="fa-solid fa-share-nodes"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="ins-image">
+          <img src="./assets/trainers_-_12-min.jpg " class="img-fluid" alt="">
+        </div>
+        <div class="content d-flex justify-content-between align-items-center mt-2">
+          <div class="left text-start">
+            <span class="designation d-block">Software Testing</span>
+            <h4 class="name mb-0">Baby Rugma</h3>
+          </div>
+          <div class="right">
+            <span class="share"><i class="fa-solid fa-share-nodes"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+        <div class="ins-image">
+          <img src="./assets/trainers_-_16-min.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="content d-flex justify-content-between align-items-center mt-2">
+          <div class="left text-start">
+            <span class="designation d-block">ASP.NET</span>
+            <h4 class="name mb-0">Lija Salim</h3>
+          </div>
+          <div class="right">
+            <span class="share"><i class="fa-solid fa-share-nodes"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="p-5 bg-white">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row rounded text-white px-4" style="background-color: #8a2fa8; width: 1200px; height: 250px;">
+      
+      <!-- Column 1 -->
+      <div class="col-lg-3 d-flex align-items-center">
+        <h3 class="fw-bold">
+          Ready To Join The <br> 
+          Best Software <br> 
+          Training Institute <br> 
+          In Kochi?
+        </h3>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-lg-6 d-flex align-items-center">
+        <p class="mb-0">
+          Become a part of our vibrant community of educators and <br> empower learners worldwide. 
+          Share your expertise, connect with <br> eager minds, and make a lasting impact in education. 
+          Our proven <br> track record makes us the most trusted software training <br> institute in Kochi 
+          for launching successful IT careers.
+        </p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-lg-3 d-flex align-items-center justify-content-center">
+          <div class="fisrtb text-center"><button type="button" class="btn btn-secondary btn-lg bfs custom-size2 bg-white fw-bold" style="color: #8a2fa8;">BECOME AN INSTRUCTOR</button></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- footer -->
+    <footer>
+      <div class="footermegaparent">
+        <div class="footerparent1">
+          <div class="container-fluid row g-5">
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <a class="footimg" href=""
+                ><img
+                  class="footerimages1 mb-3"
+                  src="./assets/logo_wide_2.png"
+                  alt=""
+              /></a>
+              <a
+                class="footimg"
+                href="
+            "
+                ><img
+                  class="footerimages2 mb-3"
+                  src="./assets/iso.088bb326.png"
+                  alt=""
+              /></a>
+
+              <a
+                class="footimg"
+                href="
+            "
+              >
+                <img
+                  class="footerimages3 mb-3"
+                  src="./assets/iao-seal.png"
+                  alt=""
+              /></a>
+              <a class="footimg" href="">
+                <img
+                  class="footerimages4 mb-3"
+                  src="./assets/download.png"
+                  alt=""
+              /></a>
+
+              <div class="contactIconsFooter">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <h3 class="footerheading">Resources</h3>
+              <div>
+                <a class="footera" href=""
+                  >Python Data Analytics with Power BI</a
+                >
+                <br />
+                <a class="footera" href=""
+                  >Best Flutter Training In Kochi (Cochin) & Calicut
+                  (Kozhikode)</a
+                >
+                <br />
+                <a class="footera" href=""
+                  >Asp.net MVC with Angular - Full Stack</a
+                >
+                <br />
+                <a class="footera" href=""
+                  >Python Django - React - Full Stack Web Development Expert</a
+                >
+                <br />
+                <a class="footera" href=""
+                  >PYTHON DATA SCIENCE - ML - AI - & Power BI</a
+                >
+                <br />
+                <a class="footera" href=""
+                  >Software Testing Training (AI Powered) - Manual & Automation
+                  MEA(R)N Stack Web Development Expert</a
+                >
+                <br />
+                <a class="footera" href="">Robotics with AI & IoT Training</a>
+                <br />
+                <a class="footera" href=""
+                  >Java Spring Full Stack Development</a
+                >
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <div class="ms-5">
+                <h3 class="footerheading">Useful Links</h3>
+                <div>
+                  <div class="link-wrapper">
+                    <div class="scroll"></div>
+                    <a class="footera1" href="#"
+                      >Refund & Cancellation Policy</a
+                    >
+                  </div>
+                  <br />
+
+                  <div class="link-wrapper">
+                    <div class="scroll"></div>
+                    <a class="footera1" href="#">Certification & Affiliation</a>
+                  </div>
+                  <br />
+
+                  <div class="link-wrapper">
+                    <div class="scroll"></div>
+                    <a class="footera1" href="#">Our Trainers</a>
+                  </div>
+                  <br />
+
+                  <div class="link-wrapper">
+                    <div class="scroll"></div>
+                    <a class="footera1" href="#">Our Courses</a>
+                  </div>
+                  <br />
+
+                  <div class="link-wrapper">
+                    <div class="scroll"></div>
+                    <a class="footera1" href="#">Gallery</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+              <h3 class="footerheading">Contact Us</h3>
+
+              <div class="parentfooterContactUs">
+                <div class="parent2footcon d-flex justify-content-center">
+                  <p class="d-inline-flex">
+                    <a
+                      class="footercontactus"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <span style="color: transparent">aaaa</span>
+                        <span class="me-5 contentfoot"
+                          >Calicut <span style="color: transparent">aaa</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-down ms-5 contentfoot"></i>
+                      </div>
+                    </a>
+                  </p>
+                </div>
+
+                <div class="collapse" id="collapseExample1">
+                  <div class="card card-body cardlistdown">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.032971758471!2d75.78116707504894!3d11.25898478892059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65900d568d853%3A0x86dc9f15ee869de3!2sLuminar%20Technolab!5e0!3m2!1sen!2sin!4v1756593441852!5m2!1sen!2sin"
+                      width="300"
+                      height="200"
+                      style="border-radius: 10px"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Address : </span>
+                      Luminar Technolab Pvt Ltd 2nd Floor, 61/10222 , Mullath
+                      Building, Opp. KSRTC Bus Stand, Mavoor Road, Calicut,
+                      Kerala-673001
+                    </p>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Phone : </span>
+                      +91 8086 531 531, 0495 - 3573001
+                    </p>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Email : </span>
+                      contact@luminartechnolab.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="section2bottom" class="parentfooterContactUs">
+                <div class="parent2footcon d-flex justify-content-center">
+                  <p class="d-inline-flex">
+                    <a
+                      class="footercontactus"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample13"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <span class="me-5 contentfoot">Kochi(H Q)</span>
+                        <i class="fa-solid fa-arrow-down ms-5 contentfoot"></i>
+                      </div>
+                    </a>
+                  </p>
+                </div>
+
+                <div class="collapse" id="collapseExample13">
+                  <div class="card card-body cardlistdown">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.984108429198!2d76.3400965745087!3d10.018169672722905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ffce877d5ef%3A0x8bef6870ad11b98!2sLuminar%20Technolab!5e0!3m2!1sen!2sin!4v1756594458584!5m2!1sen!2sin"
+                      width="300"
+                      height="200"
+                      style="border: 10px; border-radius: 10px;"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Address : </span>
+                      Luminar Technolab Pvt Ltd,Ground Floor,K7 REALTY,Juma
+                      masjid road,Seaport - Airport Rd, near Opp: District
+                      Panchayat,Kakkanad, Kochi, Kerala - 682030
+                    </p>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Phone : </span>
+                      91 8086 651 651
+                    </p>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Email : </span>
+                      contact@luminartechnolab.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="section2bottom" class="parentfooterContactUs">
+                <div class="parent2footcon d-flex justify-content-center">
+                  <p class="d-inline-flex">
+                    <a
+                      class="footercontactus"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample1344"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      <div>
+                        <span class="me-5 contentfoot">Trivandrum</span>
+                        <i class="fa-solid fa-arrow-down ms-5 contentfoot"></i>
+                      </div>
+                    </a>
+                  </p>
+                </div>
+
+                <div class="collapse" id="collapseExample1344">
+                  <div class="card card-body cardlistdown">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.793203316856!2d76.94220539999999!3d8.5194486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bb0009c76167%3A0x4f50abbcc52fbd2f!2sLuminar%20Technolab!5e0!3m2!1sen!2sin!4v1756594866970!5m2!1sen!2sin"
+                      width="300"
+                      height="200"
+                      style="border-radius: 10px"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Address : </span>
+                      Luminar Technolab Pvt Ltd,3rd Floor, Nikunjam Saras
+                      Building,opp. Kerala PSC office,Pattom,Thiruvananthapuram,
+                      Kerala 695004
+                    </p>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Phone : </span>
+                      +91 6235651651
+                    </p>
+                    <p class="contentfooter">
+                      <span class="contentFootHeading">Email : </span>
+                      trivandrum@luminartechnolab.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+        <div class="container">
+          <div class="row footerbottomcontent">
+            <div class="col-12 col-lg-4 text-center">
+              <p class="footerparalast">
+                Copyright © 2025 Luminar Technolab - Best Software Training
+                Institute in Kochi. All rights reserved.
+              </p>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+              <p class="footerparalast">Designed by Luminar R & D Team</p>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center">
+              <p class="footerparalast">Privacy Policy . Terms & Conditions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="whatsappicons">  
+      <img class="whatsappimg" src="./assets/whatsapp.png" alt="" />
+    </div>
+
+    <a href="#section1">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-delay="3000"
+        class="arrowicons"
+      >
+        <i class="fa-solid fa-arrow-up" style="color: #ffffff"></i>
+      </div>
+    </a>
+
+    <!-- contact fixed icon -->
+    <a class="ContactFixedicon" href="">
+      <div class="circle">
+        <span class="Contactfixetext">1</span>
+      </div>
+      <span class="Contactfixetext">
+        Contact Us
+      </span>
+    </a>
+
+
+<!-- Bootstrap JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 50000,   // animation duration
+    once: true        // whether animation should happen only once
+  });
+</script>
+</body>
+</html>
+
+
+
+
